@@ -1,0 +1,49 @@
+.nav {
+  @include flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 700px;
+  margin-top: 40px;
+  margin-right: 140px;
+  position: absolute;
+  right: 0;
+
+  a {
+    cursor: pointer;
+    padding: 10px;
+    color: $color-text;
+    border: 2px solid transparent;
+  }
+
+  .nav-log {
+    margin-bottom: 20px;
+
+    p {
+      display: inline-block;
+      padding: 10px;
+      color: $color-text;
+      border: 2px solid transparent;
+    }
+
+    a {
+      font-size: 0.875rem;
+      color: $color-gray;
+
+      &:hover {
+        border: 2px solid $color-yellow;
+      }
+    }
+  }
+
+  .nav-main {
+    a {
+      font-size: 1.125rem;
+      padding: 10px 20px;
+
+      &:hover {
+        border: 2px solid $color-gray;
+      }
+    }
+  }
+
+}

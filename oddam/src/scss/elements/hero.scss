@@ -1,0 +1,35 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  margin-right: 140px;
+
+  &-image {
+    width: 50%;
+  }
+
+  &-content {
+    @include flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 240px 130px 270px 60px;
+
+    h1 {
+      @include fontSizeTitle;
+      color: $color-text;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .hero-buttons {
+      @include flex;
+      justify-content: space-evenly;
+      gap: 40px;
+      margin-top: 65px;
+
+      a{
+        @include btn;
+      }
+    }
+  }
+
+}

@@ -1,4 +1,13 @@
 @import "./settings/fonts";
 @import "./settings/colors";
 
-@import "./settings/normalize";
+@import "./settings/reset";
+@import "./settings/mixins";
+@import "./settings/base";
+
+@import "./elements/navigation";
+@import "./elements/hero";
+@import "./elements/threeColumns";
+@import "./elements/steps";
+@import "./elements/aboutUs";
+@import "./elements/logReg";

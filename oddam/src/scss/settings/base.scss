@@ -1,0 +1,21 @@
+.btn{
+  @include btn;
+}
+
+.btnForm{
+  padding: 15px;
+  border: 2px solid $color-gray;
+  color: $color-gray;
+  font-size: 1.125rem;
+  background-color: white;
+}
+
+.noBorder{
+  border: none;
+}
+
+.decoration{
+  height: 35px;
+  width: 250px;
+  background: url("../../assets/Decoration.svg") center/cover no-repeat;
+}

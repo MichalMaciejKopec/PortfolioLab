@@ -1,0 +1,26 @@
+.aboutUs {
+  @include flex;
+  background-color: $color-background;
+
+  &-content {
+    @include flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: 0 150px;
+
+    &-title {
+      @include fontSizeTitle;
+      margin-bottom: 25px;
+    }
+
+    &-text {
+      margin: 60px 0 40px 0;
+      line-height: 2em;
+    }
+  }
+
+  img {
+    width: 50%;
+  }
+}

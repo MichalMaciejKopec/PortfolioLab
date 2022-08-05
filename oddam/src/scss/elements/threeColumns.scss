@@ -1,0 +1,25 @@
+.threeColumns {
+  @include flex;
+  justify-content: space-between;
+  background-color: $color-yellow;
+  gap: 200px;
+  padding: 0 160px;
+
+  &-box {
+    text-align: center;
+    color: $color-text-on-yellow;
+    margin: 50px 0 60px 0;
+  }
+
+  &-number {
+    font-size: 5.625rem;
+  }
+
+  &-title {
+    margin: 10px 0 25px 0;
+  }
+
+  &-text {
+
+  }
+}
