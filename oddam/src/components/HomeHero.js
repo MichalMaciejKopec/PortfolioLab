@@ -11,13 +11,13 @@ const HomeHero = () => {
 
             <img className="hero-image" src={image} alt="pudło z przedmiotami"/>
             <div className="hero-content">
-                <h1>Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce</h1>
+                <h1>Zacznij pomagać! <br/>Oddaj niechciane rzeczy w zaufane ręce</h1>
                 <div className="decoration"/>
                 <div className="hero-buttons">
                     {user ?
                         <>
-                            <Link to="/oddam">ODDAJ RZECZY</Link>
-                            <Link to="/">ZORGANIZUJ ZBIÓRKĘ</Link>
+                            <Link to="/oddam">ODDAJ<br/> RZECZY</Link>
+                            <Link to="/">ZORGANIZUJ<br/> ZBIÓRKĘ</Link>
                         </>
                         :
                         <>

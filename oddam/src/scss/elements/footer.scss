@@ -1,0 +1,26 @@
+.footer {
+  @include flex;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0 140px;
+  p {
+    font-size: 1.125rem;
+    color: $color-text;
+  }
+
+  &-icons {
+    @include flex;
+    gap:20px;
+    &-fb {
+      background: url("../../assets/Facebook.svg") center/cover;
+      width: 30px;
+      height: 30px;
+    }
+
+    &-inst {
+      background: url("../../assets/Instagram.svg") center/cover;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

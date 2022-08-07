@@ -1,0 +1,86 @@
+.contact {
+  @include flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  width: 100%;
+
+  &::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../assets/Background-Contact-Form.jpg") center/cover no-repeat;
+    opacity: 20%;
+  }
+
+  &-container {
+    margin: 200px 140px 250px 0;
+    @include flex;
+    flex-direction: column;
+    width: 50%;
+
+    p {
+      color: red;
+    }
+  }
+
+  &-title {
+    font-size: 2.375rem;
+    margin-bottom: 25px;
+  }
+
+  &-form {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    @media (max-width: 1300px) {
+      width: 100%;
+    }
+
+    &-box {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 40px;
+      width: 100%;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+      }
+    }
+
+    label {
+      margin-bottom: 15px;
+    }
+
+    input {
+      outline: none;
+      border: none;
+      background: transparent;
+      border-bottom: 2px solid $color-gray;
+
+      &[type="submit"] {
+        align-self: flex-end;
+        border: 2px solid $color-gray;
+        max-width: 150px;
+        padding: 15px 50px;
+        margin-top: 40px;
+      }
+    }
+
+    textarea {
+      outline: none;
+      border: none;
+      background: transparent;
+      height: 100px;
+      resize: none;
+      border-bottom: 2px solid $color-gray;
+    }
+  }
+}

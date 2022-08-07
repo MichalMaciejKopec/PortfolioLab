@@ -1,13 +1,13 @@
 .aboutUs {
   @include flex;
-  background-color: $color-background;
 
   &-content {
     @include flex;
     flex-direction: column;
     text-align: center;
     width: 50%;
-    margin: 0 150px;
+    padding: 0 150px;
+    background-color: $color-background;
 
     &-title {
       @include fontSizeTitle;
