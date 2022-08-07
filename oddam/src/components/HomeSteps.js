@@ -3,7 +3,7 @@ import Icon2 from "../assets/Icon-2.svg";
 import Icon3 from "../assets/Icon-3.svg";
 import Icon4 from "../assets/Icon-4.svg";
 
-import {UserContext} from "../context"
+import {UserContext} from "../context/userContext"
 import {useContext} from "react";
 import {Link} from "react-router-dom";
 

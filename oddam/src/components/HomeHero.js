@@ -1,5 +1,5 @@
 import image from "../assets/Home-Hero-Image.jpg"
-import {UserContext} from "../context"
+import {UserContext} from "../context/userContext"
 import {useContext} from "react";
 import {Link} from "react-router-dom";
 

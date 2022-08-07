@@ -1,6 +1,6 @@
 import {Link, useLocation, useNavigate} from "react-router-dom";
 import {Link as Scroll, scroller} from "react-scroll";
-import {UserContext} from "../context"
+import {UserContext} from "../context/userContext"
 import {useContext} from "react";
 
 const Navigation = () => {

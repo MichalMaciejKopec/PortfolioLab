@@ -1,11 +1,9 @@
 import React from 'react';
-import {UserProvider} from "./context";
+import {UserProvider} from "./context/userContext";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import { useScroll } from 'react-scroll';
 
 import Home from "./components/Home";
 import LogReg from "./components/LogReg";
-import Logout from "./components/Logout";
 import Form from "./components/Form";
 
 function App() {
@@ -15,9 +13,9 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
-                    <Route path="login" element={<LogReg create={false}/>}/>
-                    <Route path="registration" element={<LogReg create={true}/>}/>
-                    <Route path="logout" element={<LogReg logout={true}/>}/>
+                    <Route path="login" element={<LogReg create={false} logout={false}/>}/>
+                    <Route path="registration" element={<LogReg create={true} logout={false}/>}/>
+                    <Route path="logout" element={<LogReg create={false} logout={true}/>}/>
                     <Route path="oddam" element={<Form/>}/>
                 </Routes>
             </BrowserRouter>

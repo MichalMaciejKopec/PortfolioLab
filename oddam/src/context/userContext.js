@@ -1,6 +1,6 @@
 import {createContext, useState, useEffect} from 'react';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
-import {app} from "./firebaseConfig";
+import {app} from "../firebaseConfig";
 
 export const UserContext = createContext();
 
@@ -27,5 +27,3 @@ export function UserProvider({children}) {
         </UserContext.Provider>
     )
 }
-
-export default UserContext;

@@ -32,7 +32,7 @@ const LogReg = ({create, logout}) => {
             signOut(auth).then(() => {
 
             }).catch((error) => {
-
+                console.log(error);
             });
         }
     }, [])
