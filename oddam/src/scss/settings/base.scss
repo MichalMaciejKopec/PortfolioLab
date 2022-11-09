@@ -19,3 +19,9 @@
   width: 250px;
   background: url("../../assets/Decoration.svg") center/cover no-repeat;
 }
+
+html{
+  @media (max-width: 1300px) {
+    font-size: 14px;
+  }
+}

@@ -20,6 +20,9 @@
     width: 100%;
     gap: 170px;
     margin-bottom: 35px;
+    @media (max-width: 1300px) {
+      gap: 50px;
+    }
   }
 
   &-box {
